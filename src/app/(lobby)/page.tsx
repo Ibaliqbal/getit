@@ -1,13 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { TemplateCard } from "@/components/template-card";
 import { templates } from "@/utils/template";
 import {
@@ -87,7 +79,12 @@ export default function Home() {
 
         <div className="container px-4 md:px-6 relative z-10">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="space-y-4">
+            <div
+              className="space-y-4 animate-fade-up duration-700"
+              style={{
+                animationFillMode: "both",
+              }}
+            >
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2">
                 <Sparkles className="w-3.5 h-3.5 mr-2" />
                 <span>Premium Website Templates</span>
@@ -127,7 +124,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div
+              className="flex items-center justify-center animate-fade-up duration-700 delay-500"
+              style={{
+                animationFillMode: "both",
+              }}
+            >
               <div className="relative w-full max-w-[500px] aspect-video rounded-lg overflow-hidden border shadow-lg">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5"></div>
 
